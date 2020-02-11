@@ -54,7 +54,7 @@ class InputParametersReaderTest {
     public void readParameters_containsBReturnsLessonParametersWithLessonBeginTime() throws ParseException {
         String[] args={"-b","17:00"};
         LessonParameters result = parametersReader.readParameters(args);
-        assertThat(result.getBeginTime(),equalTo(LocalTime.of(17,00)));
+        assertThat(result.getBeginTime(),equalTo(LocalTime.of(17,0)));
     }
 
     @Test
